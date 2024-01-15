@@ -6,6 +6,10 @@ const nextConfig = {
     process.env.NODE_ENV === "production"
       ? "https://cokid1998.github.io/portfolio"
       : "",
+  basePath:
+    process.env.NODE_ENV === "production"
+      ? "https://cokid1998.github.io/portfolio"
+      : "",
 };
 
 module.exports = nextConfig;
