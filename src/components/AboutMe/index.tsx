@@ -23,13 +23,25 @@ export default function AboutMe() {
           <MindSubTitle>SubTitle</MindSubTitle>
           <MindTxt>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            industry.typesetting industry.typesetting industry.
+            <br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.typesetting industry.typesetting industry.
+            <br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.typesetting industry.typesetting industry.
           </MindTxt>
 
           <MindSubTitle>SubTitle</MindSubTitle>
           <MindTxt>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            industry.typesetting industry.typesetting industry.
+            <br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.typesetting industry.typesetting industry.
+            <br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.typesetting industry.typesetting industry.
           </MindTxt>
         </MyMindDescBox>
       </ContentWrap>
@@ -47,18 +59,20 @@ const ContentWrap = tw.div`
 const InfoWrap = tw.div`
   flex
   flex-col
-  gap-5
+  gap-16
   w-fit
 `;
 
 const InfoBox = tw.div`
   border-2
-  border-borderGreen
+  border-white
   text-3xl
   text-white
   p-4
   text-center
   rounded-2xl
+  min-w-fit
+  hover:text-borderGreen
 `;
 
 const MyMindDescBox = tw.div`
@@ -68,7 +82,6 @@ const MyMindDescBox = tw.div`
   p-8
   flex-1
   last:*:mb-0
-  min-w-fit
 `;
 
 const MindTitle = tw.h3`
