@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 
-export default function Section1() {
+export default function IntroSection() {
   return (
     <FirstSectionContainer>
       <TypoWrapper>
@@ -22,8 +22,8 @@ export default function Section1() {
 }
 
 const FirstSectionContainer = tw.section`
+  bg-IntroSection
   min-h-screen
-  bg-grayBg
   flex
   justify-center
   items-center

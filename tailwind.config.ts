@@ -17,6 +17,7 @@ const config: Config = {
       grayBg: "#515151",
       white: "#FFFFFF",
     },
+    backgroundImage: {},
   },
   plugins: [],
 };
