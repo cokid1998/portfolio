@@ -4,8 +4,8 @@ export default function IntroSection() {
   return (
     <FirstSectionContainer>
       <TypoWrapper>
-        <RotationCircle />
-        <div className={`text-6xl z-1 relative`}>Front-End PortFolio</div>
+        {/* <RotationCircle /> */}
+        <div className={`text-7xl z-1 relative`}>Front-End PortFolio</div>
         <div className={`text-5xl z-1 relative`}>
           프론트엔드 개발자 <strong>이태관</strong>입니다.
         </div>
@@ -22,7 +22,7 @@ export default function IntroSection() {
 }
 
 const FirstSectionContainer = tw.section`
-  bg-IntroSection
+  bg-main
   min-h-screen
   flex
   justify-center

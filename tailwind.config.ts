@@ -17,7 +17,9 @@ const config: Config = {
       grayBg: "#515151",
       white: "#FFFFFF",
     },
-    backgroundImage: {},
+    backgroundImage: {
+      main: 'url("https://github.com/cokid1998/portfolio/blob/main/src/assets/images/background-image.jpg?raw=true")',
+    },
   },
   plugins: [],
 };
