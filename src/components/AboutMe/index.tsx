@@ -27,16 +27,10 @@ export default function AboutMe() {
             <br />
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.typesetting industry.typesetting industry.
-            <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.typesetting industry.typesetting industry.
           </MindTxt>
 
           <MindSubTitle>SubTitle</MindSubTitle>
           <MindTxt>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.typesetting industry.typesetting industry.
-            <br />
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.typesetting industry.typesetting industry.
             <br />
@@ -59,7 +53,7 @@ const ContentWrap = tw.div`
 const InfoWrap = tw.div`
   flex
   flex-col
-  gap-16
+  justify-between
   w-fit
 `;
 
