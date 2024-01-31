@@ -2,28 +2,24 @@ import tw from "tailwind-styled-components";
 import Image from "next/image";
 
 export const StackBox = tw.div`
+  w-full
   border-2
   border-white
   rounded-lg
   p-4
-  flex
-  flex-1
-  flex-wrap
-  justify-center
-  gap-5
+  grid
+  grid-cols-4
+  gap-4
 `;
 
 export const StackItem = tw.div`
-  flex
-  flex-col
-  border-2
-  border-white
   rounded-lg
   p-2
+  flex
+  flex-col
   gap-3
   text-center
   items-center
-  w-1/5
 `;
 
 export const StackImageWrap = tw.div`

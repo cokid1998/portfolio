@@ -14,3 +14,7 @@ export const Title = tw.h3`
   text-white
   font-semibold
 `;
+
+export const ImageWrapper = tw.div`
+  relative
+`;
