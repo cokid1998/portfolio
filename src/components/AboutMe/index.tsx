@@ -66,7 +66,6 @@ const InfoBox = tw.div`
   text-center
   rounded-2xl
   min-w-fit
-  hover:text-borderGreen
 `;
 
 const MyMindDescBox = tw.div`
