@@ -15,6 +15,8 @@ export const Title = tw.h3`
   font-semibold
 `;
 
-export const ImageWrapper = tw.div`
+export const ImageWrap = tw.div<{ width: string; height: string }>`
   relative
+  ${({ width }) => width}
+  ${({ height }) => height}
 `;

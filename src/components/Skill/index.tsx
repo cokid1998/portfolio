@@ -7,6 +7,7 @@ import {
   StackImageWrap,
   StackName,
 } from "@/components/Skill/Skill.styled";
+import { ImageWrap } from "@/components/StyledComponents";
 
 // Front-End Icon
 import HTML_ICON from "@/assets/icons/FrontEndStackIcon/HTML.svg";
@@ -62,7 +63,6 @@ const Skill = () => {
 
       <SkillWrap>
         {Object.entries(STACK_DATA).map(([job, stack]) => {
-          console.log(job, stack);
           return (
             <SkillBox key={job} job={job}>
               <JobTxt>{job}</JobTxt>
@@ -71,13 +71,13 @@ const Skill = () => {
                 {stack.map((stackItem) => {
                   return (
                     <StackItem key={stackItem.name}>
-                      <StackImageWrap>
+                      <ImageWrap width="w-12" height="h-12">
                         <StackImage
                           src={stackItem.icon}
                           alt={`${stackItem.name}-icon`}
                           fill
                         />
-                      </StackImageWrap>
+                      </ImageWrap>
                       <StackName>{stackItem.name}</StackName>
                     </StackItem>
                   );
