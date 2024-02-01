@@ -6,7 +6,7 @@ export const EducationItemWrap = tw.div`
   p-5
 `;
 
-export const EductaionTitle = tw.h4`
+export const EducationTitle = tw.h4`
   text-white
   text-3xl
   mb-1

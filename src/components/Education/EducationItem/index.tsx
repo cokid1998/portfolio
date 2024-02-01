@@ -1,6 +1,6 @@
 import {
   EducationItemWrap,
-  EductaionTitle,
+  EducationTitle,
   EducationDuringTxt,
   EducationDetailTxt,
   EducationStudyInfo,
@@ -20,7 +20,7 @@ const EducationItem = ({
 }) => {
   return (
     <EducationItemWrap>
-      <EductaionTitle>{title}</EductaionTitle>
+      <EducationTitle>{title}</EducationTitle>
       <EducationDuringTxt>{during}</EducationDuringTxt>
       <EducationDetailTxt>{detail}</EducationDetailTxt>
 
