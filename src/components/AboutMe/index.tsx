@@ -1,6 +1,6 @@
 import { Container, Title } from "@/components/Common.styled";
 import {
-  ContentWrap,
+  AboutMeWrap,
   InfoWrap,
   InfoBox,
   MyMindDescBox,
@@ -8,12 +8,13 @@ import {
   MindSubTitle,
   MindTxt,
 } from "@/components/AboutMe/AboutMe.styled";
+
 export default function AboutMe() {
   return (
     <Container>
       <Title>AboutMe</Title>
 
-      <ContentWrap>
+      <AboutMeWrap>
         <InfoWrap>
           <InfoBox>이태관</InfoBox>
           <InfoBox>010-7707-5801</InfoBox>
@@ -45,7 +46,7 @@ export default function AboutMe() {
             industry.typesetting industry.typesetting industry.
           </MindTxt>
         </MyMindDescBox>
-      </ContentWrap>
+      </AboutMeWrap>
     </Container>
   );
 }
