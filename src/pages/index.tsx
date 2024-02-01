@@ -2,6 +2,7 @@ import IntroSection from "@/components/IntroSection";
 import AboutMe from "@/components/AboutMe";
 import Skill from "@/components/Skill";
 import Project from "@/components/Project";
+import Education from "@/components/Education";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <AboutMe />
       <Skill />
       <Project />
+      <Education />
     </main>
   );
 }
