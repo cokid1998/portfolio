@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 
-export const Container = tw.div`
+export const Container = tw.section`
   min-h-screen
   p-8
   bg-blackBg
