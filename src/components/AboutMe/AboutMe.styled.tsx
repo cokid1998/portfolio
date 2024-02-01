@@ -16,7 +16,7 @@ export const InfoWrap = tw.div`
 
 export const InfoBox = tw.div`
   border-2
-  border-white
+  bg-boxBg
   text-3xl
   text-white
   p-4
@@ -26,12 +26,11 @@ export const InfoBox = tw.div`
 `;
 
 export const MyMindDescBox = tw.div`
-  border-2
-  border-white
   rounded-2xl
   p-8
   flex-1
   last:*:mb-0
+  bg-boxBg
 `;
 
 export const MindTitle = tw.h3`

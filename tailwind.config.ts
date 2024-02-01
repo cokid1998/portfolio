@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       blackBg: "#232323",
       white: "#FFFFFF",
+      boxBg: "#323232",
     },
     backgroundImage: {
       main: 'url("https://github.com/cokid1998/portfolio/blob/main/src/assets/images/background-image.jpg?raw=true")',

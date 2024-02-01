@@ -3,13 +3,12 @@ import Image from "next/image";
 
 export const StackBox = tw.div`
   w-full
-  border-2
-  border-white
   rounded-lg
   p-4
   grid
   grid-cols-4
   gap-4
+  bg-boxBg
 `;
 
 export const StackItem = tw.div`
