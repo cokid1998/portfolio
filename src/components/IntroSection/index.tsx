@@ -1,4 +1,7 @@
-import tw from "tailwind-styled-components";
+import {
+  FirstSectionContainer,
+  TypoWrapper,
+} from "@/components/IntroSection/IntroSection.styled";
 
 export default function IntroSection() {
   return (
@@ -19,22 +22,3 @@ export default function IntroSection() {
     </FirstSectionContainer>
   );
 }
-
-const FirstSectionContainer = tw.section`
-  bg-main
-  min-h-screen
-  flex
-  justify-center
-  items-center
-  flex-col
-  gap-28
-`;
-
-const TypoWrapper = tw.div`
-  relative
-  flex
-  flex-col
-  gap-5
-  justify-center
-  items-center
-`;

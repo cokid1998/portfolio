@@ -1,6 +1,13 @@
-import tw from "tailwind-styled-components";
-import { Container, Title } from "@/components/StyledComponents/index";
-
+import { Container, Title } from "@/components/Common.styled";
+import {
+  ContentWrap,
+  InfoWrap,
+  InfoBox,
+  MyMindDescBox,
+  MindTitle,
+  MindSubTitle,
+  MindTxt,
+} from "@/components/AboutMe/AboutMe.styled";
 export default function AboutMe() {
   return (
     <Container>
@@ -42,58 +49,3 @@ export default function AboutMe() {
     </Container>
   );
 }
-
-const ContentWrap = tw.div`
-  flex
-  justify-between
-  gap-44
-  mx-auto
-`;
-
-const InfoWrap = tw.div`
-  flex
-  flex-col
-  justify-between
-  w-fit
-`;
-
-const InfoBox = tw.div`
-  border-2
-  border-white
-  text-3xl
-  text-white
-  p-4
-  text-center
-  rounded-2xl
-  min-w-fit
-`;
-
-const MyMindDescBox = tw.div`
-  border-2
-  border-white
-  rounded-2xl
-  p-8
-  flex-1
-  last:*:mb-0
-`;
-
-const MindTitle = tw.h3`
-  text-4xl
-  font-semibold
-  pb-[3rem]
-  text-white
-  text-center
-`;
-
-const MindSubTitle = tw.h4`
-  text-2xl
-  font-semibold
-  pb-[0.8rem]
-  text-white
-`;
-
-const MindTxt = tw.p`
-  text-lg
-  mb-10
-  text-white
-`;

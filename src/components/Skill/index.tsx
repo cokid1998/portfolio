@@ -1,13 +1,15 @@
 import tw from "tailwind-styled-components";
-import { Container, Title } from "@/components/StyledComponents";
+import { Container, Title, ImageWrap } from "@/components/Common.styled";
 import {
   StackBox,
   StackItem,
   StackImage,
-  StackImageWrap,
   StackName,
+  SkillWrap,
+  SkillBox,
+  JobTxt,
+  HorizontalHr,
 } from "@/components/Skill/Skill.styled";
-import { ImageWrap } from "@/components/StyledComponents";
 
 // Front-End Icon
 import HTML_ICON from "@/assets/icons/FrontEndStackIcon/HTML.svg";
@@ -90,34 +92,5 @@ const Skill = () => {
     </Container>
   );
 };
-
-const SkillWrap = tw.div`
-  flex
-  flex-col
-  gap-24
-  min-w-screen-md
-  mx-auto
-  lg:w-10/12
-`;
-
-const SkillBox = tw.div<{ job: string }>`
-  flex
-  gap-5
-  items-center
-  ${(props) => (props.job === "Back-End" ? "flex-row-reverse" : null)}
-`;
-
-const HorizontalHr = tw.hr`
-  border-t-2
-  border-blue-900
-  w-1/2
-  border-white
-`;
-
-const JobTxt = tw.h3`
-  min-w-36
-  text-3xl
-  text-white
-`;
 
 export default Skill;
