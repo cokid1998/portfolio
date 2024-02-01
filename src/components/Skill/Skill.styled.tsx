@@ -22,12 +22,6 @@ export const StackItem = tw.div`
   items-center
 `;
 
-export const StackImageWrap = tw.div`
-  w-12
-  h-12
-  relative
-`;
-
 export const StackImage = tw(Image)`
   
 `;
