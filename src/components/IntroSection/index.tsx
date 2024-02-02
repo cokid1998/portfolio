@@ -2,8 +2,14 @@ import {
   FirstSectionContainer,
   TypoWrapper,
 } from "@/components/IntroSection/IntroSection.styled";
+import { ProfileImageWrap } from "@/components/IntroSection/IntroSection.styled";
+import useIsMobile from "@/hooks/useIsMobile";
+import Image from "next/image";
+
+// import PROFILE_IMAGE from "@/assets/images/ProfileImage.webp";
 
 export default function IntroSection() {
+  const isMobile = useIsMobile();
   return (
     <FirstSectionContainer>
       <TypoWrapper>
@@ -18,7 +24,9 @@ export default function IntroSection() {
         </div>
       </TypoWrapper>
 
-      <div className={`w-96 h-96 border-blackBg border-2`}>사진</div>
+      <ProfileImageWrap isMobile={isMobile}>
+        {/* <Image src={PROFILE_IMAGE} alt={""} fill></Image> */}
+      </ProfileImageWrap>
     </FirstSectionContainer>
   );
 }
