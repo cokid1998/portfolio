@@ -5,10 +5,14 @@ export const FirstSectionContainer = tw.section`
   bg-main
   min-h-screen
   flex
-  justify-center
-  items-center
   flex-col
-  gap-28
+  lg:justify-center
+  lg:items-center
+  lg:gap-28
+  max-sm:gap-0
+  max-sm:text-center
+  max-sm:justify-between
+  justify-between
 `;
 
 export const TypoWrapper = tw.div`
@@ -20,14 +24,28 @@ export const TypoWrapper = tw.div`
   items-center
 `;
 
-export const ProfileImageWrap = tw(motion.div)<{ isMobile: boolean }>`
+export const AnimateTxt = tw.p`
+  z-1
+  relative
+  lg:text-[6rem]
+  max-sm:text-[3rem]
+  max-sm:leading-none
+`;
+
+export const MyNameTxt = tw.div`
+  z-1
+  relative
+  lg:text-5xl
+  max-sm:text-xl
+`;
+
+export const ProfileImageWrap = tw(motion.div)<{ $ismobile: boolean }>`
   relative
   bottom-0
-  w-4/5
-  h-[calc(100vh-40vh)]
   transition-all
-  ${(props) =>
-    props.isMobile
-      ? "max-sm:h-[calc(100vh-50vh)]"
-      : "max-sm:h-[calc(100vh-40vh)]"}
+`;
+
+export const IconWrap = tw.div`
+  flex
+  gap-10
 `;

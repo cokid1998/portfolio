@@ -10,6 +10,9 @@ const nextConfig = {
     process.env.NODE_ENV === "production"
       ? "https://cokid1998.github.io/portfolio"
       : "",
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;
