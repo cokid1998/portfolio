@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components";
 import { motion } from "framer-motion";
 
-export const FirstSectionContainer = tw.section`
+export const FirstSectionContainer = tw(motion.section)`
   bg-main
   min-h-screen
   flex
@@ -9,10 +9,10 @@ export const FirstSectionContainer = tw.section`
   lg:justify-center
   lg:items-center
   lg:gap-28
-  max-sm:gap-0
-  max-sm:text-center
-  max-sm:justify-between
-  justify-between
+  sm:gap-0
+  sm:text-center
+  sm:justify-between
+  sm:items-center
 `;
 
 export const TypoWrapper = tw.div`
@@ -24,11 +24,11 @@ export const TypoWrapper = tw.div`
   items-center
 `;
 
-export const AnimateTxt = tw.p`
+export const AnimateTxt = tw(motion.p)`
   z-1
   relative
   lg:text-[6rem]
-  max-sm:text-[3rem]
+  min-sm:text-[3rem]
   max-sm:leading-none
 `;
 
@@ -37,12 +37,6 @@ export const MyNameTxt = tw.div`
   relative
   lg:text-5xl
   max-sm:text-xl
-`;
-
-export const ProfileImageWrap = tw(motion.div)<{ $ismobile: boolean }>`
-  relative
-  bottom-0
-  transition-all
 `;
 
 export const IconWrap = tw.div`
