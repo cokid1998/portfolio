@@ -25,6 +25,8 @@ import {
 import ScrollDown from "@/components/IntroSection/ScrollDown";
 
 export default function IntroSection() {
+  const isMobile = true;
+
   return (
     <FirstSectionContainer initial="init" animate="start">
       <TypoWrap variants={TypoWrapVariants}>
@@ -47,8 +49,8 @@ export default function IntroSection() {
       </TypoWrap>
 
       <ImageWrap
-        width="w-96"
-        height="  h-[calc(100vh-40vh)]"
+        width={isMobile ? "w-full" : "w-96"}
+        height="h-[calc(100vh-40vh)]"
         variants={ImageWrapVariants}
       >
         <Image src={PROFILE_IMAGE} alt={"profile-image"} fill />
