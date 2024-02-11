@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import tw from "tailwind-styled-components";
 
 export const Container = tw.section`
@@ -15,7 +16,7 @@ export const Title = tw.h3`
   font-semibold
 `;
 
-export const ImageWrap = tw.div<{ width: string; height: string }>`
+export const ImageWrap = tw(motion.div)<{ width: string; height: string }>`
   relative
   ${({ width }) => width}
   ${({ height }) => height}

@@ -1,14 +1,5 @@
-import { useEffect, useState } from "react";
-
 const useWindowHeight = () => {
-  const [windowHeight, setWindowHeight] = useState(0);
-
-  useEffect(() => {
-    if (!window) return;
-    else setWindowHeight(window.innerHeight);
-  }, []);
-
-  return [windowHeight, setWindowHeight];
+  return typeof window !== "undefined" ? window.innerHeight : 0;
 };
 
 export default useWindowHeight;

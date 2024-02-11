@@ -6,10 +6,7 @@ const nextConfig = {
     process.env.NODE_ENV === "production"
       ? "https://cokid1998.github.io/portfolio"
       : "",
-  basePath:
-    process.env.NODE_ENV === "production"
-      ? "https://cokid1998.github.io/portfolio"
-      : "",
+  basePath: process.env.NODE_ENV === "production" ? "/portfolio" : "",
   images: {
     unoptimized: true,
   },

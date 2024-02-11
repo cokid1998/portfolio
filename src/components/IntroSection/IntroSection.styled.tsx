@@ -6,16 +6,16 @@ export const FirstSectionContainer = tw(motion.section)`
   min-h-screen
   flex
   flex-col
-  lg:justify-center
+  lg:justify-between
   lg:items-center
-  lg:gap-28
   sm:gap-0
   sm:text-center
   sm:justify-between
   sm:items-center
+  relative
 `;
 
-export const TypoWrapper = tw.div`
+export const TypoWrap = tw(motion.div)`
   relative
   flex
   flex-col
@@ -32,14 +32,15 @@ export const AnimateTxt = tw(motion.p)`
   max-sm:leading-none
 `;
 
-export const MyNameTxt = tw.div`
+export const MyNameTxt = tw(motion.div)`
   z-1
   relative
-  lg:text-5xl
+  font-light
+  lg:text-4xl
   max-sm:text-xl
 `;
 
-export const IconWrap = tw.div`
+export const IconWrap = tw(motion.div)`
   flex
   gap-10
 `;
