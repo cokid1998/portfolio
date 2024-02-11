@@ -23,9 +23,10 @@ import {
 } from "@/components/IntroSection/IntroSection.ani";
 
 import ScrollDown from "@/components/IntroSection/ScrollDown";
+import useIsMobile from "@/hooks/useIsMobile";
 
 export default function IntroSection() {
-  const isMobile = true;
+  const isMobile = useIsMobile();
 
   return (
     <FirstSectionContainer initial="init" animate="start">

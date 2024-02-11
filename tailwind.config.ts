@@ -15,6 +15,10 @@ const config: Config = {
     backgroundImage: {
       main: 'url("https://github.com/cokid1998/portfolio/blob/main/src/assets/images/background-image.jpg?raw=true")',
     },
+    screens: {
+      sm: { min: "360px", max: "1023px" },
+      lg: { min: "1024px" },
+    },
   },
   plugins: [],
 };
