@@ -40,5 +40,4 @@ const ContentWrap = tw.div`
   flex
   flex-col
   relative
-  gap-[15rem]
 `;
