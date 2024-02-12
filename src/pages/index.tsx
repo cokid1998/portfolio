@@ -29,9 +29,10 @@ export default function Home() {
 const NavWrap = tw.div`
   bg-blackBg
   flex
-  gap-[3.5rem]
   relative
   h-full
+  p-10
+  gap-[3.5rem]
   sm:flex-col
 `;
 
@@ -39,4 +40,5 @@ const ContentWrap = tw.div`
   flex
   flex-col
   relative
+  gap-[15rem]
 `;

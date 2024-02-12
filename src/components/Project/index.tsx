@@ -1,10 +1,15 @@
-import { Container, Title } from "@/components/Common.styled";
+import { Container } from "@/components/Common.styled";
 import { ProjectWrap } from "@/components/Project/Project.styled";
 import ProjectItem from "@/components/Project/ProjectItem";
 
 import SSVT_IMAGE from "@/assets/images/SSVT.png";
 import MARKHADA_IMAGE from "@/assets/images/MARKHADA.png";
 import PORTFOLIO_IMAGE from "@/assets/images/Portfolio.png";
+
+import { useContext } from "react";
+import { CurrentSection } from "@/context/CurrentSectionProvider";
+import { useRef, useEffect } from "react";
+import { inView } from "framer-motion";
 
 const PROJECT_DATA = [
   {
@@ -26,9 +31,7 @@ const PROJECT_DATA = [
 
 const Project = () => {
   return (
-    <Container>
-      <Title>Project</Title>
-
+    <Container navTitle="Project">
       <ProjectWrap>
         {PROJECT_DATA.map((projectItem) => (
           <ProjectItem key={projectItem.title} projectItem={projectItem} />

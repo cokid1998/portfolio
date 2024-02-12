@@ -1,14 +1,9 @@
-import {
-  PropsWithChildren,
-  createContext,
-  useState,
-  Dispatch,
-  useEffect,
-} from "react";
+import { PropsWithChildren, createContext, useState, Dispatch } from "react";
 
-type CurrentSectionType =
+export type CurrentSectionType =
   | "IntroSection"
   | "AboutMe"
+  | "Skill"
   | "Project"
   | "Education"
   | "Career";
@@ -26,10 +21,6 @@ export const CurrentSection = createContext<CurrentSectionObjType>({
 const CurrentSectionProvider = ({ children }: PropsWithChildren) => {
   const [currentSection, setCurrentSection] =
     useState<CurrentSectionType>("IntroSection");
-
-  useEffect(() => {
-    console;
-  }, [currentSection]);
 
   return (
     <CurrentSection.Provider value={{ currentSection, setCurrentSection }}>

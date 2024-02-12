@@ -25,9 +25,7 @@ const EDUCATION_DATA = [
 
 const Education = () => {
   return (
-    <Container>
-      <Title>Education</Title>
-
+    <Container navTitle="Education">
       <EducationWrap>
         {EDUCATION_DATA.map((item) => {
           return <EducationItem key={item.title} educationData={item} />;

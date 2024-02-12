@@ -1,5 +1,4 @@
-import tw from "tailwind-styled-components";
-import { Container, Title, ImageWrap } from "@/components/Common.styled";
+import { ImageWrap, Container } from "@/components/Common.styled";
 import {
   StackBox,
   StackItem,
@@ -10,6 +9,9 @@ import {
   JobTxt,
   HorizontalHr,
 } from "@/components/Skill/Skill.styled";
+
+import { useContext, useRef } from "react";
+import { CurrentSection } from "@/context/CurrentSectionProvider";
 
 // Front-End Icon
 import HTML_ICON from "@/assets/icons/FrontEndStackIcon/HTML.svg";
@@ -60,9 +62,7 @@ const STACK_DATA = {
 
 const Skill = () => {
   return (
-    <Container>
-      <Title>Skill</Title>
-
+    <Container navTitle={"Skill"}>
       <SkillWrap>
         {Object.entries(STACK_DATA).map(([job, stack]) => {
           return (

@@ -42,7 +42,7 @@ export const SkillBox = tw.div<{ job: string }>`
   flex
   gap-5
   items-center
-  ${(props) => (props.job === "Back-End" ? "flex-row-reverse" : null)}
+  ${({ job }) => (job === "Back-End" ? "flex-row-reverse" : null)}
 `;
 
 export const HorizontalHr = tw.hr`

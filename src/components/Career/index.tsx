@@ -1,4 +1,4 @@
-import { Container, Title } from "@/components/Common.styled";
+import { Container } from "@/components/Common.styled";
 import { CareerWrap } from "@/components/Career/Career.styled";
 import CareerItem from "@/components/Career/CareerItem";
 
@@ -13,9 +13,7 @@ const CAREER_DATA = [
 
 const Career = () => {
   return (
-    <Container>
-      <Title>Career</Title>
-
+    <Container navTitle="Career">
       <CareerWrap>
         {CAREER_DATA.map((careerItem) => {
           return <CareerItem key={careerItem.title} careerData={careerItem} />;
