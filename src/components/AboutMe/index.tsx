@@ -1,4 +1,4 @@
-import { Container, Title } from "@/components/Common.styled";
+import { Container } from "@/components/Common.styled";
 import {
   AboutMeWrap,
   InfoWrap,
@@ -12,8 +12,6 @@ import {
 export default function AboutMe() {
   return (
     <Container>
-      <Title>AboutMe</Title>
-
       <AboutMeWrap>
         <InfoWrap>
           <InfoBox>이태관</InfoBox>
