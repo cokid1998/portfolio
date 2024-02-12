@@ -8,6 +8,7 @@ export const Container = tw.section`
   flex
   flex-col
   gap-20
+  relative
 `;
 
 export const Title = tw.h3`

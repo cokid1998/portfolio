@@ -5,10 +5,10 @@ export const FirstSectionContainer = tw(motion.section)`
   bg-main
   flex
   flex-col
-  relative
   lg:min-h-screen
   lg:justify-between
   lg:items-center
+  lg:w-full
   sm:gap-0
   sm:text-center
   sm:justify-between
@@ -16,6 +16,8 @@ export const FirstSectionContainer = tw(motion.section)`
   sm:p-5
   sm:pt-10
   sm:h-svh
+  sticky
+  top-0
 `;
 
 export const TypoWrap = tw(motion.div)`
