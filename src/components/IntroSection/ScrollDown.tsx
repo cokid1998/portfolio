@@ -10,7 +10,7 @@ const ScrollDown = () => {
   return (
     <ScrollDownWrap
       initial="init"
-      animate="start"
+      animate="animate"
       variants={ScrollDownWrapVariants}
     >
       <Image src={ARROW_BOTTOM_ICON} alt="scroll-down" />
