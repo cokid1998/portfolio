@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   IntroSectionContainer,
   TypoWrap,
@@ -24,9 +25,11 @@ import {
 
 import ScrollDown from "@/components/IntroSection/ScrollDown";
 import useIsMobile from "@/hooks/useIsMobile";
+import { CurrentSection } from "@/context/CurrentSectionProvider";
 
 export default function IntroSection() {
   const isMobile = useIsMobile();
+  const { currentSection, setCurrentSection } = useContext(CurrentSection);
 
   return (
     <IntroSectionContainer initial="init" animate="animate">

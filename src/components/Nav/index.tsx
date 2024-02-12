@@ -1,13 +1,14 @@
 import tw from "tailwind-styled-components";
 import { Title } from "@/components/Common.styled";
 
+const NAV_ITEMS = ["AboutMe", "Project", "Education", "Career"];
+
 const Nav = () => {
   return (
     <NavContainer>
-      <Title>AboutMe</Title>
-      <Title>Project</Title>
-      <Title>Education</Title>
-      <Title>Career</Title>
+      {NAV_ITEMS.map((item) => (
+        <Title key={item}>{item}</Title>
+      ))}
     </NavContainer>
   );
 };

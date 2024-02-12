@@ -14,7 +14,6 @@ export default function Home() {
 
       <NavWrap>
         <Nav />
-
         <ContentWrap>
           <AboutMe />
           <Skill />

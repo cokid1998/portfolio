@@ -8,7 +8,7 @@ const EDUCATION_DATA = [
     during: "2017.03 ~ 2025.09",
     detail: "~~~졸업",
     studyInfo: [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptate iure eveniet",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptate iure eveniet!",
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptate iure eveniet",
     ],
   },
