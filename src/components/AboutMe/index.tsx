@@ -26,6 +26,7 @@ export default function AboutMe() {
 
         <MyMindDescBox>
           <MindTitle>Lorem Ipsum is simply dummy</MindTitle>
+
           <MindSubTitle>SubTitle</MindSubTitle>
           <MindTxt>
             Lorem Ipsum is simply dummy text of the printing and typesetting

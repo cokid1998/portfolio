@@ -40,6 +40,7 @@ const StyledContainer = tw.section`
   gap-20
   relative
   min-h-screen
+  justify-center
 `;
 
 export const Title = tw.button<{ isvisible: boolean }>`

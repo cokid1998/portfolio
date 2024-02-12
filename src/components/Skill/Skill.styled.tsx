@@ -34,8 +34,6 @@ export const SkillWrap = tw.div`
   flex-col
   gap-24
   min-w-screen-md
-  mx-auto
-  lg:w-10/12
 `;
 
 export const SkillBox = tw.div<{ job: string }>`

@@ -3,8 +3,7 @@ import tw from "tailwind-styled-components";
 export const AboutMeWrap = tw.div`
   flex
   justify-between
-  gap-44
-  mx-auto
+  gap-20
 `;
 
 export const InfoWrap = tw.div`

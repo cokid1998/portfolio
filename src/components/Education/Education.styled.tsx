@@ -5,5 +5,4 @@ export const EducationWrap = tw.div`
   grid-cols-2
   gap-28
   min-w-screen-md
-  mx-auto
 `;
