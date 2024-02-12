@@ -11,6 +11,9 @@ const config: Config = {
       blackBg: "#232323",
       white: "#FFFFFF",
       boxBg: "#323232",
+      navVisible: "#EFEFF1",
+      navInVisible: "#373737",
+      navHover: "#4A4A4A",
     },
     backgroundImage: {
       main: 'url("https://github.com/cokid1998/portfolio/blob/main/src/assets/images/background-image.jpg?raw=true")',
