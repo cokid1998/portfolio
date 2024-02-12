@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components";
 import { motion } from "framer-motion";
 
-export const FirstSectionContainer = tw(motion.section)`
+export const IntroSectionContainer = tw(motion.section)`
   bg-main
   flex
   flex-col

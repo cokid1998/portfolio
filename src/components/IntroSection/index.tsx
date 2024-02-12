@@ -1,5 +1,5 @@
 import {
-  FirstSectionContainer,
+  IntroSectionContainer,
   TypoWrap,
   IconWrap,
   AnimateTxt,
@@ -29,7 +29,7 @@ export default function IntroSection() {
   const isMobile = useIsMobile();
 
   return (
-    <FirstSectionContainer initial="init" animate="start">
+    <IntroSectionContainer initial="init" animate="animate">
       <TypoWrap variants={TypoWrapVariants}>
         <AnimateTxt variants={AnimateTxtVariants}>
           Front-End PortFolio
@@ -58,6 +58,6 @@ export default function IntroSection() {
       </ImageWrap>
 
       <ScrollDown />
-    </FirstSectionContainer>
+    </IntroSectionContainer>
   );
 }

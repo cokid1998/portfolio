@@ -7,7 +7,7 @@ export const TypoWrapVariants: Variants = {
     y: innerHeight - 0.75 * innerHeight,
     scale: 1.25,
   },
-  start: {
+  animate: {
     y: 0,
     scale: 1,
     transition: {
@@ -21,7 +21,7 @@ export const AnimateTxtVariants: Variants = {
   init: {
     opacity: 0,
   },
-  start: {
+  animate: {
     opacity: 1,
     transition: {
       duration: 1.5,
@@ -33,7 +33,7 @@ export const MyNameTxtVariants: Variants = {
   init: {
     opacity: 0,
   },
-  start: {
+  animate: {
     opacity: 1,
     transition: {
       duration: 1.5,
@@ -46,7 +46,7 @@ export const IconWrapVariants: Variants = {
   init: {
     opacity: 0,
   },
-  start: {
+  animate: {
     opacity: 1,
     transition: {
       duration: 1,
@@ -59,7 +59,7 @@ export const ImageWrapVariants: Variants = {
   init: {
     opacity: 0,
   },
-  start: {
+  animate: {
     opacity: 1,
     transition: {
       delay: 5,
@@ -73,7 +73,7 @@ export const ScrollDownWrapVariants: Variants = {
     opacity: 0,
     y: -5,
   },
-  start: {
+  animate: {
     opacity: 1,
     y: [10, 0, 10],
     transition: {
