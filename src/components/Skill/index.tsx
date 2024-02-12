@@ -10,9 +10,6 @@ import {
   HorizontalHr,
 } from "@/components/Skill/Skill.styled";
 
-import { useContext, useRef } from "react";
-import { CurrentSection } from "@/context/CurrentSectionProvider";
-
 // Front-End Icon
 import HTML_ICON from "@/assets/icons/FrontEndStackIcon/HTML.svg";
 import CSS_ICON from "@/assets/icons/FrontEndStackIcon/CSS.svg";

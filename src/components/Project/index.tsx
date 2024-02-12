@@ -6,11 +6,6 @@ import SSVT_IMAGE from "@/assets/images/SSVT.png";
 import MARKHADA_IMAGE from "@/assets/images/MARKHADA.png";
 import PORTFOLIO_IMAGE from "@/assets/images/Portfolio.png";
 
-import { useContext } from "react";
-import { CurrentSection } from "@/context/CurrentSectionProvider";
-import { useRef, useEffect } from "react";
-import { inView } from "framer-motion";
-
 const PROJECT_DATA = [
   {
     thumbnailURL: SSVT_IMAGE,

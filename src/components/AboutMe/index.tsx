@@ -8,8 +8,6 @@ import {
   MindSubTitle,
   MindTxt,
 } from "@/components/AboutMe/AboutMe.styled";
-import { useContext, useEffect, useRef } from "react";
-import { CurrentSection } from "@/context/CurrentSectionProvider";
 
 export default function AboutMe() {
   return (
