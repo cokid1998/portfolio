@@ -34,6 +34,7 @@ const Nav = () => {
 export default Nav;
 
 const NavContainer = tw.nav`
+  pt-5
   sticky
   top-0
   flex

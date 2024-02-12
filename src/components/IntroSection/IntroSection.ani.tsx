@@ -55,6 +55,14 @@ export const IconWrapVariants: Variants = {
   },
 };
 
+export const IconLinkHoverVariants = {
+  y: -5,
+  transition: {
+    duration: 0.3,
+    type: "spring",
+  },
+};
+
 export const ImageWrapVariants: Variants = {
   init: {
     opacity: 0,

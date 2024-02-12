@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import {
   IntroSectionContainer,
   TypoWrap,
@@ -14,22 +13,21 @@ import { GITHUB_URL, BLOG_URL } from "@/constants/paths";
 import PROFILE_IMAGE from "@/assets/images/PleaseBob.jpeg";
 import GITHUB_ICON from "@/assets/icons/Etc/Github.svg";
 import BLOG_ICON from "@/assets/icons/Etc/Blog.svg";
-
+import { motion } from "framer-motion";
 import {
   TypoWrapVariants,
   AnimateTxtVariants,
   MyNameTxtVariants,
   IconWrapVariants,
   ImageWrapVariants,
+  IconLinkHoverVariants,
 } from "@/components/IntroSection/IntroSection.ani";
 
 import ScrollDown from "@/components/IntroSection/ScrollDown";
 import useIsMobile from "@/hooks/useIsMobile";
-import { CurrentSection } from "@/context/CurrentSectionProvider";
 
 export default function IntroSection() {
   const isMobile = useIsMobile();
-  const { currentSection, setCurrentSection } = useContext(CurrentSection);
 
   return (
     <IntroSectionContainer initial="init" animate="animate">
@@ -43,12 +41,16 @@ export default function IntroSection() {
         </MyNameTxt>
 
         <IconWrap variants={IconWrapVariants}>
-          <Link href={GITHUB_URL} target="_blank">
-            <Image src={GITHUB_ICON} alt="github-icon" width={"32"} />
-          </Link>
-          <Link href={BLOG_URL} target="_blank">
-            <Image src={BLOG_ICON} alt="blog-icon" width={"40"} />
-          </Link>
+          <motion.div whileHover={IconLinkHoverVariants}>
+            <Link href={GITHUB_URL} target="_blank">
+              <Image src={GITHUB_ICON} alt="github-icon" width={"32"} />
+            </Link>
+          </motion.div>
+          <motion.div whileHover={IconLinkHoverVariants}>
+            <Link href={BLOG_URL} target="_blank">
+              <Image src={BLOG_ICON} alt="blog-icon" width={"40"} />
+            </Link>
+          </motion.div>
         </IconWrap>
       </TypoWrap>
 
