@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import AnimatedTitle from "../../animations/AnimatedTitle";
 import AnimatedBody from "../../animations/AnimatedBody";
-import { motion } from "framer-motion";
+import { motion, Transition } from "framer-motion";
 import Container from "../container/Container";
-import React from "react";
+import React, { cloneElement } from "react";
 import { SiGithub } from "react-icons/si";
 import { TiHome } from "react-icons/ti";
 
@@ -113,13 +113,18 @@ const ProjectCard = ({
           />
           <div className="col-start-1 col-end-2 mt-9 mb-9 grid grid-cols-5 gap-5">
             {technologies.map((IconComponent, id) => (
-              <div key={id} className={"relative"}>
+              <motion.div
+                key={id}
+                className="relative w-fit"
+                whileHover={{ scale: 1.1, color: "red" }}
+                transition={{ duration: 0.5 }}
+              >
                 <IconComponent
                   className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
                   data-blobity-tooltip={techNames[id]}
                   data-blobity-magnetic="false"
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

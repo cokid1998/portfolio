@@ -33,7 +33,7 @@ export const projects = [
     description:
       "현재 서비스중인 온라인 상표등록 자동화 서비스의 프론트앤드 개발을 담당했습니다.",
     technologies: [SiTypescript, SiReact, SiNextdotjs, SiMui, SiFramer],
-    techNames: ["TypeScript", "React", "Next.js", "MUI", "Framer Motion"],
+    techNames: ["TypeScript", "React", "Next.js", "MUI", "Framer-Motion"],
     github: "https://github.com/karthikmudunuri/eldoraui",
     demo: "https://www.markhada.com/",
     image: "/projects/MARKHADA.png",
