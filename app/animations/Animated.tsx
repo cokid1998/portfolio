@@ -71,7 +71,7 @@ const Animated: React.FC<AnimatedProps> = ({
           <motion.div
             key={index}
             whileHover={{
-              scale: 1.1,
+              scale: 1.3,
               filter: hovercolor ? "saturate(300%)" : "",
               color: hovercolor ? "" : "white",
             }}
