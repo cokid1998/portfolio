@@ -3,6 +3,11 @@ import { useAnimation, motion, Variants, Transition } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { IconType } from "react-icons";
 
+// IconType 확장
+interface ExtendedIconType extends IconType {
+  hovercolor?: string;
+}
+
 type AnimatedProps = {
   className?: string;
   delay?: number;
@@ -60,11 +65,16 @@ const Animated: React.FC<AnimatedProps> = ({
     >
       {React.Children.map(children, (child, index) => {
         // Cast the child to an IconType to access the IconType properties
-        const icon = child as React.ReactElement<IconType>;
+        const icon = child as React.ReactElement<ExtendedIconType>;
+        const { hovercolor } = icon.props;
         return (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.1, filter: "saturate(300%)" }}
+            whileHover={{
+              scale: 1.1,
+              filter: hovercolor ? "saturate(300%)" : "",
+              color: hovercolor ? "" : "white",
+            }}
             whileTap={{ scale: 0.9 }}
             style={{ width: iconSize, height: iconSize }}
             data-blobity
