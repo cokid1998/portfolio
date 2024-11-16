@@ -9,6 +9,21 @@ import React, { cloneElement } from "react";
 import { SiGithub } from "react-icons/si";
 import { TiHome } from "react-icons/ti";
 
+enum LibColor {
+  // JS = "#F7DF1E",
+  TypeScript = "#3178C6",
+  React = "#61DAFB",
+  MUI = "#007FFF",
+  "Framer-Motion" = "#0055FF",
+  // TAILWIND = "#06B6D4",
+  // REACT_QUERY = "#FF4154",
+  // GIT = "#F05032",
+  // FIGMA = "#F24E1E",
+  // SHADCN = "#000001",
+  // GITHUB = "#181717",
+  // "Next.js" = "#000000",
+}
+
 const ProjectCard = ({
   id,
   name,
@@ -116,13 +131,14 @@ const ProjectCard = ({
               <motion.div
                 key={id}
                 className="relative w-fit"
-                whileHover={{ scale: 1.1, color: "red" }}
+                whileHover={{ scale: 1.1, filter: "saturate(300%)" }}
                 transition={{ duration: 0.5 }}
               >
                 <IconComponent
                   className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
                   data-blobity-tooltip={techNames[id]}
                   data-blobity-magnetic="false"
+                  color={LibColor[techNames[id] as keyof typeof LibColor]}
                 />
               </motion.div>
             ))}
