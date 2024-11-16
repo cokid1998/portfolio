@@ -4,7 +4,7 @@ import HeroBackground from "../components/background/HeroBackground";
 import React from "react";
 import AnimatedTitle from "../animations/AnimatedTitle";
 
-const Hero = () => {
+const Home = () => {
   return (
     <motion.section
       className="relative z-10 flex h-[100vh] w-full justify-center"
@@ -31,4 +31,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
