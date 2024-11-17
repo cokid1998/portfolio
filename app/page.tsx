@@ -15,6 +15,7 @@ import Projects from "./sections/Projects.tsx";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Skills from "./sections/Skills.tsx";
+import Career from "./sections/Career.tsx";
 
 export default function Index() {
   const [isMobile, setIsMobile] = useState(false);
@@ -60,8 +61,9 @@ export default function Index() {
       <main className="flex flex-col items-center justify-center bg-black">
         <Home />
         <About />
-        <Projects />
         <Skills />
+        <Projects />
+        <Career />
         <Contact />
         <Footer />
       </main>

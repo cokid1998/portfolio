@@ -2,16 +2,17 @@ import React from "react";
 import "../animations/animate.css";
 import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
+import ProjectGrid from "../components/work/ProjectGrid";
 
-const About = () => {
+const Career = () => {
   return (
     <section
       className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
-      id="about"
+      id="career"
     >
       <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
         <AnimatedTitle
-          text={"ABOUT ME"}
+          text={"CARRER"}
           className={
             "mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
           }
@@ -44,4 +45,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Career;
