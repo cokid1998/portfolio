@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   applicationName: "프론트엔드 개발자 포트폴리오",
   keywords: [
     "프론트엔드 개발자 포트폴리오",
-    "Eldora UI",
     "React",
     "developer",
     "frontend",
@@ -43,8 +42,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "프론트엔드 개발자 이태관",
     description: "프론트엔드 개발자 이태관의 포트폴리오 사이트",
-    url: "https://www.eldoraui.site/",
-    siteName: "www.eldoraui.site",
+    url: "https://cokid-portfolio.vercel.app/",
+    siteName: "https://cokid-portfolio.vercel.app/",
     images: [
       {
         url: "./public/metadata.jpg",

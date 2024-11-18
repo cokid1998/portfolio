@@ -15,7 +15,8 @@ enum LibColor {
   React = "#61DAFB",
   MUI = "#007FFF",
   "Framer-Motion" = "#0055FF",
-  // TAILWIND = "#06B6D4",
+  Gatsby = "#663399",
+  Tailwind = "#06B6D4",
   // REACT_QUERY = "#FF4154",
   // GIT = "#F05032",
   // FIGMA = "#F24E1E",
@@ -66,45 +67,42 @@ const ProjectCard = ({
         <div
           className={`absolute top-0 text-[#0E1016] ${
             id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
-          } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
+          } mt-6 flex items-center justify-center gap-4 lg:mt-10`}
         >
           {available ? (
             <>
-              {id ? (
-                <Link
-                  href={github}
-                  target="_blank"
-                  aria-label="Open GitHub Repository"
-                  className="w-[43px] rounded-full bg-white p-3 text-[20px] md:w-[65px] md:p-5 md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                  data-blobity
-                  data-blobity-radius="35"
-                  data-blobity-offset-x="4"
-                  data-blobity-offset-y="4"
-                  data-blobity-magnetic="false"
-                >
-                  <SiGithub />
-                </Link>
-              ) : (
-                <></>
-              )}
-
               <Link
-                href={demo}
+                href={github ? github : ""}
                 target="_blank"
-                aria-label="Open Live Demo"
-                className=" w-[43px] rounded-full bg-white p-3 text-[20px] md:w-[65px] md:p-5 md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                aria-label="Open GitHub Repository"
+                className="w-[43px] rounded-full bg-white p-3 text-[20px] md:w-[65px] md:p-5 md:text-[24px] lg:w-[65px] lg:text-[28px]"
                 data-blobity
+                data-blobity-tooltip="Github 가기"
                 data-blobity-radius="35"
                 data-blobity-offset-x="4"
                 data-blobity-offset-y="4"
                 data-blobity-magnetic="false"
               >
-                <TiHome />
+                <SiGithub />
               </Link>
             </>
           ) : (
             <div></div>
           )}
+          <Link
+            href={demo}
+            target="_blank"
+            aria-label="Open Live Demo"
+            className=" w-[43px] rounded-full bg-white p-3 text-[20px] md:w-[65px] md:p-5 md:text-[24px] lg:w-[65px] lg:text-[28px]"
+            data-blobity
+            data-blobity-tooltip="홈페이지 가기"
+            data-blobity-radius="35"
+            data-blobity-offset-x="4"
+            data-blobity-offset-y="4"
+            data-blobity-magnetic="false"
+          >
+            <TiHome />
+          </Link>
         </div>
         <div
           className={`absolute text-white  ${
@@ -116,7 +114,7 @@ const ProjectCard = ({
           <AnimatedTitle
             text={name}
             className={
-              "max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none"
+              "max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:min-w-[450px] lg:text-[48px] lg:leading-none"
             }
             wordSpace={"mr-[0.25em]"}
             charSpace={"-mr-[0.01em]"}
