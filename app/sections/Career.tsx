@@ -21,23 +21,50 @@ const Career = () => {
         />
 
         <div className="mx-auto flex w-[100%] flex-col justify-center lg:max-w-[1200px] lg:flex-row lg:gap-20">
-          <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[24px] ">
-            <AnimatedBody
-              text="안녕하세요! 저는 프론트엔드 개발자 이태관입니다. 저는 개발을 통해 새로운 가치를 창출하고, 사용자가 진정으로 원하는 경험을 제공하는 것을 무엇보다 중요하게 생각합니다."
-              className="break-keep"
-            />
+          <div className="mb-10 grid w-[100%] grid-cols-1 gap-4 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:grid-cols-2 lg:text-[24px]">
+            <div className="group relative overflow-hidden rounded bg-[#373737] p-[20px]">
+              <span className="text-sm text-[#A6A6A6]">
+                2017.03 - 2025.03(졸업예정)
+              </span>
+              <div className="flex flex-col text-2xl font-bold">
+                <span className="mb-[2px]">
+                  조선대학교 경영학과, 컴퓨터공학과
+                </span>
+                <span className="mb-[10px] text-sm">
+                  @ 컴퓨터공학과 복수전공 졸업예정
+                </span>
 
-            <AnimatedBody
-              delay={0.1}
-              className="break-keep"
-              text="React와 Tailwind CSS와 같은 모던 웹 기술을 활용해 직관적이고 효율적인 UI를 설계하고, 프로젝트가 사용자에게 긍정적인 변화를 줄 수 있도록 최선을 다합니다. 사용자의 요구를 깊이 이해하고, 이를 해결하는 혁신적인 방법을 찾는 과정에서 큰 보람을 느낍니다."
-            />
+                <ul className="text-base text-[#A6A6A6]">
+                  <div className="relative pl-2.5 font-normal before:absolute before:left-0 before:top-[0.625rem] before:block before:h-1 before:w-1 before:rounded-full before:bg-[#A6A6A6]">
+                    운영체제, 자료구조, 데이터구조 등 컴퓨터과학 수업 수강
+                  </div>
+                </ul>
+              </div>
+            </div>
 
-            <AnimatedBody
-              delay={0.2}
-              className="break-keep"
-              text="제 개발 목표는 단순한 기능을 넘어, 사용자에게 가치 있는 경험을 제공하고, 웹을 통해 긍정적인 영향을 끼치는 것입니다."
-            />
+            <div className="group relative overflow-hidden rounded bg-[#373737] p-[20px]">
+              <span className="text-sm text-[#A6A6A6]">
+                2021. 12 - 2022. 01
+              </span>
+              <div className="flex flex-col text-2xl font-bold">
+                <span className="mb-[2px]">코드스테이츠 부트캠프</span>
+                <span className="mb-[10px] text-sm">
+                  @ Software engineering 34기 수료
+                </span>
+
+                <ul className="text-base text-[#A6A6A6]">
+                  <div className="relative pl-2.5 before:absolute before:left-0 before:top-[0.625rem] before:block before:h-1 before:w-1 before:rounded-full before:bg-[#A6A6A6]">
+                    Javascript기반 Full Stack 과정
+                  </div>
+                  <div className="relative pl-2.5 before:absolute before:left-0 before:top-[0.625rem] before:block before:h-1 before:w-1 before:rounded-full before:bg-[#A6A6A6]">
+                    프론트엔드 React와 관련 라이브러리 사용법 학습
+                  </div>
+                  <div className="relative pl-2.5 before:absolute before:left-0 before:top-[0.625rem] before:block before:h-1 before:w-1 before:rounded-full before:bg-[#A6A6A6]">
+                    백엔드 Node.js 중심 학습
+                  </div>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
