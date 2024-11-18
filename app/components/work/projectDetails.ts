@@ -64,18 +64,6 @@ export const projects = [
   },
   {
     id: 2,
-    name: "대학교 시간표",
-    description:
-      "대학생들이 많이 쓰는 에브리타임 시간표의 아쉬운부분을 채워 직접 대학교 시간표를 만들었습니다.",
-    technologies: [SiTypescript, SiReact],
-    techNames: ["TypeScript", "React"],
-    github: "https://github.com/cokid1998/college-timetable",
-    demo: "https://cokid1998.github.io/college-timetable/",
-    image: "/projects/TIMETABLE.png",
-    available: true,
-  },
-  {
-    id: 3,
     name: "글로샤 퍼블리싱",
     description:
       "조선대학교 컴퓨터공학과 교수님 한분이 진행중인 프로젝트의 퍼블리싱을 맡아서 진행중입니다.",
@@ -84,5 +72,17 @@ export const projects = [
     demo: "https://glosya.ai/",
     image: "/projects/GLOSYA.png",
     available: false,
+  },
+  {
+    id: 3,
+    name: "대학교 시간표",
+    description:
+      "대학생들이 많이 쓰는 에브리타임 시간표의 아쉬운부분이 있어 직접 대학교 시간표를 만들었습니다.",
+    technologies: [SiTypescript, SiReact],
+    techNames: ["TypeScript", "React"],
+    github: "https://github.com/cokid1998/college-timetable",
+    demo: "https://cokid1998.github.io/college-timetable/",
+    image: "/projects/TIMETABLE.png",
+    available: true,
   },
 ];

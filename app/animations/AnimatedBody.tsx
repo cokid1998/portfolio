@@ -49,6 +49,15 @@ export default function AnimatedBody({
     },
   };
 
+  const isColloge = (text: string) => {
+    if (
+      text ===
+      "대학생들이 많이 쓰는 에브리타임 시간표의 아쉬운부분이 있어 직접 대학교 시간표를 만들었습니다."
+    )
+      return true;
+    return false;
+  };
+
   return (
     <motion.div
       aria-label={text}
@@ -59,6 +68,12 @@ export default function AnimatedBody({
       initial="hidden"
       animate={ctrls}
       variants={bodyAnimation}
+      {...(isColloge(text!)
+        ? {
+            "data-blobity-tooltip":
+              "시간표 상단에 다음 수업까지 몇분 남았는지와 위치를 알려주는 UI를 만들었습니다.",
+          }
+        : {})}
     >
       {children}
       {Icon}

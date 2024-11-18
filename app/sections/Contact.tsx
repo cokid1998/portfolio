@@ -37,6 +37,7 @@ const Contact = () => {
               href="https://github.com/cokid1998"
               target="_blank"
               aria-label="View GitHub Profile"
+              data-blobity-tooltip="View GitHub Profile"
             >
               <AnimatedBody Icon={<IoLogoGithub size="50px" />} />
             </Link>
@@ -44,6 +45,7 @@ const Contact = () => {
               href="mailto:cokid98@gmail.com?subject=Lets%20work%20together!&amp;body=이메일을 보내주세요!"
               target="_blank"
               aria-label="Email"
+              data-blobity-tooltip="Send Email"
             >
               <AnimatedBody Icon={<MdEmail size="50px" />} />
             </Link>
