@@ -34,6 +34,7 @@ const ProjectCard = ({
   demo,
   image,
   available,
+  auth,
 }: ProjectProps) => {
   return (
     <motion.div
@@ -126,6 +127,16 @@ const ProjectCard = ({
               "mt-4 w-[90%] max-w-[457px] break-words break-keep text-[16px] font-semibold text-[#95979D]"
             }
           />
+          {auth && (
+            <AnimatedBody
+              className={
+                "mt-4 w-[90%] max-w-[457px] break-words break-keep text-[16px] font-semibold text-[#95979D]"
+              }
+            >
+              {auth}
+            </AnimatedBody>
+          )}
+
           <div className="col-start-1 col-end-2 mt-9 mb-9 grid grid-cols-5 gap-5">
             {technologies.map((IconComponent, id) => (
               <motion.div

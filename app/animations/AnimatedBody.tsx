@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -7,7 +7,7 @@ type AnimatedBodyProps = {
   className?: string;
   delay?: number;
   Icon?: React.ReactElement;
-  children?: React.ReactElement;
+  children?: React.ReactElement | React.ReactNode;
 };
 
 export default function AnimatedBody({

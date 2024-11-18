@@ -1,3 +1,4 @@
+import React from "react";
 import {
   SiCplusplus,
   SiFramer,
@@ -24,6 +25,7 @@ export type ProjectProps = {
   demo: string;
   image: string;
   available: boolean;
+  auth?: React.ReactNode;
 };
 
 export const projects = [
@@ -38,6 +40,15 @@ export const projects = [
     demo: "https://www.markhada.com/",
     image: "/projects/MARKHADA.png",
     available: true,
+    auth: React.createElement(
+      "div",
+      null, // props는 null로 설정
+      "로그인을해서 더 자세히 프로젝트를 확인해보세요!", // 첫 번째 자식 텍스트
+      React.createElement("br"), // <br /> 태그 추가
+      "ID: freshman1998@naver.com", // 두 번째 자식 텍스트
+      React.createElement("br"), // <br /> 태그 추가
+      "P/W: 1q2w3e4r!" // 두 번째 자식 텍스트
+    ),
   },
   {
     id: 1,
