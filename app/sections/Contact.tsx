@@ -41,7 +41,7 @@ const Contact = () => {
               <AnimatedBody Icon={<IoLogoGithub size="50px" />} />
             </Link>
             <Link
-              href="mailto:cokid1998@gmail.com?subject=Lets%20work%20together!&amp;body=이메일을 보내주세요!"
+              href="mailto:cokid98@gmail.com?subject=Lets%20work%20together!&amp;body=이메일을 보내주세요!"
               target="_blank"
               aria-label="Email"
             >

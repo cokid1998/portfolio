@@ -7,6 +7,7 @@ type AnimatedBodyProps = {
   className?: string;
   delay?: number;
   Icon?: React.ReactElement;
+  children?: React.ReactElement;
 };
 
 export default function AnimatedBody({
@@ -14,6 +15,7 @@ export default function AnimatedBody({
   className,
   delay,
   Icon,
+  children,
 }: AnimatedBodyProps) {
   const ctrls = useAnimation();
 
@@ -48,7 +50,7 @@ export default function AnimatedBody({
   };
 
   return (
-    <motion.p
+    <motion.div
       aria-label={text}
       role="heading"
       className={className}
@@ -58,8 +60,9 @@ export default function AnimatedBody({
       animate={ctrls}
       variants={bodyAnimation}
     >
+      {children}
       {Icon}
       {text}
-    </motion.p>
+    </motion.div>
   );
 }
