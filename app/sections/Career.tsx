@@ -49,7 +49,7 @@ const Career = () => {
 
             <div className="group relative overflow-hidden rounded bg-[#373737] p-[20px]">
               <span className="text-sm text-[#A6A6A6]">
-                2021. 12 - 2022. 01
+                2021. 07 - 2022. 01
               </span>
               <div className="flex flex-col text-2xl font-bold">
                 <span className="mb-[2px]">코드스테이츠 부트캠프</span>
