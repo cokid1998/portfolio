@@ -58,7 +58,7 @@ export const projects = [
     description: "SSVT의 공식 웹사이트 제작을 담당했습니다.",
     technologies: [SiTypescript, SiReact, SiGatsby, SiFramer, RxStitchesLogo],
     techNames: ["TypeScript", "React", "Gatsby", "Framer-Motion", "Stitches"],
-    demo: "https://develop.d5jamrwz2x9u6.amplifyapp.com/",
+    demo: "https://ssvt-co-kr-client-mqwq.vercel.app/",
     image: "/projects/SSVT.png",
     available: false,
   },
