@@ -71,9 +71,10 @@ export const projects = [
       "PokeApi에서 제공하는 공식 포켓몬 API를 통해서 포켓몬 도감 프로젝트를 구현했습니다.",
     technologies: [SiJavascript,SiReact, SiTailwindcss,SiReactquery],
     techNames: ["JavaScript","React","Tailwind","REACT-QUERY"],
+    github: "https://github.com/cokid1998/pokebook",
     demo: "https://pokebook-ruby.vercel.app/",
     image: "/projects/POKEBOOK.png",
-    available: false,
+    available: true,
   },
   {
     id: 3,
