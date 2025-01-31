@@ -13,6 +13,8 @@ import {
   SiZig,
   SiMui,
   SiGatsby,
+  SiJavascript,
+  SiReactquery
 } from "react-icons/si";
 import { RxStitchesLogo } from "react-icons/rx";
 
@@ -55,7 +57,7 @@ export const projects = [
   {
     id: 1,
     name: "SSVT 홈페이지",
-    description: "SSVT의 공식 웹사이트 제작을 담당했습니다.",
+    description: "퇴직전 SSVT의 공식 웹사이트 제작을 담당했습니다.",
     technologies: [SiTypescript, SiReact, SiGatsby, SiFramer, RxStitchesLogo],
     techNames: ["TypeScript", "React", "Gatsby", "Framer-Motion", "Stitches"],
     demo: "https://ssvt-co-kr-client.vercel.app/",
@@ -64,13 +66,13 @@ export const projects = [
   },
   {
     id: 2,
-    name: "글로샤 퍼블리싱",
+    name: "포켓몬 도감",
     description:
-      "조선대학교 컴퓨터공학과 교수님 한분이 진행중인 프로젝트의 퍼블리싱을 맡아서 진행중입니다.",
-    technologies: [SiTailwindcss, SiFramer],
-    techNames: ["Tailwind", "Framer-Motion"],
-    demo: "https://glosya.ai/",
-    image: "/projects/GLOSYA.png",
+      "PokeApi에서 제공하는 공식 포켓몬 API를 통해서 포켓몬 도감 프로젝트를 구현했습니다.",
+    technologies: [SiJavascript,SiReact, SiTailwindcss,SiReactquery],
+    techNames: ["JavaScript","React","Tailwind","REACT-QUERY"],
+    demo: "https://pokebook-ruby.vercel.app/",
+    image: "/projects/POKEBOOK.png",
     available: false,
   },
   {

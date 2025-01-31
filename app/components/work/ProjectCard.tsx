@@ -10,14 +10,14 @@ import { SiGithub } from "react-icons/si";
 import { TiHome } from "react-icons/ti";
 
 enum LibColor {
-  // JS = "#F7DF1E",
+  JavaScript = "#F7DF1E",
   TypeScript = "#3178C6",
   React = "#61DAFB",
   MUI = "#007FFF",
   "Framer-Motion" = "#0055FF",
   Gatsby = "#663399",
   Tailwind = "#06B6D4",
-  // REACT_QUERY = "#FF4154",
+  "REACT-QUERY" = "#FF4154",
   // GIT = "#F05032",
   // FIGMA = "#F24E1E",
   // SHADCN = "#000001",
